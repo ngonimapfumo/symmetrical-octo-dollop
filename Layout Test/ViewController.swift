@@ -16,6 +16,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        outletSegment.setTitleTextAttributes(titleTextAttributes, for:
+                .normal)
+        
+        
+        
+        
+        self.view.backgroundColor = .black
         self.view.bringSubviewToFront(loginSegmentView)
     }
 
