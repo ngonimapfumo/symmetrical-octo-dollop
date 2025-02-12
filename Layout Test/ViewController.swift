@@ -9,11 +9,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var outletSegment: UISegmentedControl!
+    @IBOutlet weak var loginSegmentView: UIView!
+    @IBOutlet weak var registerSegmentView: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.view.bringSubviewToFront(loginSegmentView)
     }
 
 
+    @IBAction func segmentAction(_ sender: UISegmentedControl) {
+        
+        switch sender.selectedSegmentIndex{
+        case 0:
+            self.view.bringSubviewToFront(loginSegmentView)
+            
+        case 1:
+            self.view.bringSubviewToFront(registerSegmentView)
+            
+        default:
+            break
+        }
+    }
 }
 
