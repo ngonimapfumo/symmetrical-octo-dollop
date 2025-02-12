@@ -116,7 +116,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vE8-sG-Jpr">
                                 <rect key="frame" x="0.0" y="69" width="361" height="98"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1sB-zn-j4F">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1sB-zn-j4F">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="jU1-RI-1Mz"/>
@@ -127,7 +127,7 @@
                                             <action selector="usernameTextField:" destination="a6r-ac-j7x" eventType="editingDidEnd" id="8e8-U6-XaO"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="csF-8n-skW">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="csF-8n-skW">
                                         <rect key="frame" x="0.0" y="53" width="361" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="bWR-i4-0qJ"/>
@@ -136,6 +136,12 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="1sB-zn-j4F" firstAttribute="leading" secondItem="vE8-sG-Jpr" secondAttribute="leading" constant="5" id="BHQ-D7-NBh"/>
+                                    <constraint firstAttribute="trailing" secondItem="csF-8n-skW" secondAttribute="trailing" constant="5" id="b3X-SD-Y0b"/>
+                                    <constraint firstAttribute="trailing" secondItem="1sB-zn-j4F" secondAttribute="trailing" constant="5" id="cIx-ed-5Dq"/>
+                                    <constraint firstItem="csF-8n-skW" firstAttribute="leading" secondItem="vE8-sG-Jpr" secondAttribute="leading" constant="5" id="lTa-Bc-Io8"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yah-Gz-aty"/>
@@ -154,7 +160,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZK-GV-ggR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="a6r-ac-j7x" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1027" y="-168"/>
+            <point key="canvasLocation" x="808" y="-214"/>
         </scene>
     </scenes>
     <resources>
