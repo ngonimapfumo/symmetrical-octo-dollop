@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		23B4D3122D5D26A200C03DA5 /* loginSegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B4D3112D5D26A200C03DA5 /* loginSegmentViewController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F3084F7C2D5D015100C672A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23B4D3112D5D26A200C03DA5 /* loginSegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginSegmentViewController.swift; sourceTree = "<group>"; };
 		F3084F652D5D015000C672A7 /* Layout Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Layout Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3084F7B2D5D015100C672A7 /* Layout TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Layout TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3084F852D5D015100C672A7 /* Layout TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Layout TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,9 +90,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23B4D30F2D5D261B00C03DA5 /* Segments */ = {
+			isa = PBXGroup;
+			children = (
+				23B4D3112D5D26A200C03DA5 /* loginSegmentViewController.swift */,
+			);
+			path = Segments;
+			sourceTree = "<group>";
+		};
 		F3084F5C2D5D015000C672A7 = {
 			isa = PBXGroup;
 			children = (
+				23B4D30F2D5D261B00C03DA5 /* Segments */,
 				F3084F672D5D015000C672A7 /* Layout Test */,
 				F3084F7E2D5D015100C672A7 /* Layout TestTests */,
 				F3084F882D5D015100C672A7 /* Layout TestUITests */,
@@ -249,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23B4D3122D5D26A200C03DA5 /* loginSegmentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

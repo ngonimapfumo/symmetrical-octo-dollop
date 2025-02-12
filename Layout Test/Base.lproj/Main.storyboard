@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Segment View Controller-->
         <scene sceneID="zjH-FZ-6IE">
             <objects>
-                <viewController id="YZQ-PH-y0v" sceneMemberID="viewController">
+                <viewController id="YZQ-PH-y0v" customClass="loginSegmentViewController" customModule="Layout_Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ngd-mG-Uiu">
                         <rect key="frame" x="0.0" y="0.0" width="361" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,27 +105,54 @@
             </objects>
             <point key="canvasLocation" x="1027" y="148"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Segment View Controller-->
         <scene sceneID="zsF-3x-vl2">
             <objects>
-                <viewController id="Gch-IZ-Xwd" sceneMemberID="viewController">
+                <viewController id="Gch-IZ-Xwd" customClass="loginSegmentViewController" customModule="Layout_Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wQF-3B-dPy">
                         <rect key="frame" x="0.0" y="0.0" width="361" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6D4-iz-0dJ">
-                                <rect key="frame" x="159" y="140" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vE8-sG-Jpr">
+                                <rect key="frame" x="0.0" y="69" width="361" height="98"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1sB-zn-j4F">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="jU1-RI-1Mz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="usernameTextField:" destination="a6r-ac-j7x" eventType="editingDidEnd" id="8e8-U6-XaO"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="csF-8n-skW">
+                                        <rect key="frame" x="0.0" y="53" width="361" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="bWR-i4-0qJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yah-Gz-aty"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yah-Gz-aty" firstAttribute="trailing" secondItem="vE8-sG-Jpr" secondAttribute="trailing" id="fHf-b4-uoZ"/>
+                            <constraint firstItem="vE8-sG-Jpr" firstAttribute="top" secondItem="yah-Gz-aty" secondAttribute="top" constant="10" id="gdw-Nl-Oa9"/>
+                            <constraint firstItem="vE8-sG-Jpr" firstAttribute="leading" secondItem="yah-Gz-aty" secondAttribute="leading" id="wq4-zH-r3b"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="csF-8n-skW" id="KXD-Qg-y3U"/>
+                        <outlet property="usernameTextField" destination="1sB-zn-j4F" id="p4I-F3-Ydg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZK-GV-ggR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="a6r-ac-j7x" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1027" y="-168"/>
         </scene>
