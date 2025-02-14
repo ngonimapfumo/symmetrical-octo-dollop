@@ -31,7 +31,25 @@ class loginSegmentViewController: UIViewController {
 extension UITextField{
     
     func addPaddingToTextField(){
+        let paddingView:UIView = UIView.init(frame: CGRect(x:0,y:0,width:8,height:0))
+        self.leftView = paddingView;
+        self.leftViewMode = .always;
+        self.rightView = paddingView;
+        self.rightViewMode = .always;
+        
         
         
     }
+    
+    
+}
+
+extension UIView{
+    func addBottomBorderWithColor(color:UIColor,width:CGFloat){
+        let border = CALayer()
+        border.backgroundColor = color.cgColor
+        border.frame = CGRect(x: 0, y: self.frame.size.height - width, width: self.frame.width - 25, height: width)
+        self.layer.addSublayer(border)
+    }
+    
 }
