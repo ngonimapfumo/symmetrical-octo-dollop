@@ -136,20 +136,36 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="1sB-zn-j4F" firstAttribute="leading" secondItem="vE8-sG-Jpr" secondAttribute="leading" constant="5" id="BHQ-D7-NBh"/>
-                                    <constraint firstAttribute="trailing" secondItem="csF-8n-skW" secondAttribute="trailing" constant="5" id="b3X-SD-Y0b"/>
-                                    <constraint firstAttribute="trailing" secondItem="1sB-zn-j4F" secondAttribute="trailing" constant="5" id="cIx-ed-5Dq"/>
-                                    <constraint firstItem="csF-8n-skW" firstAttribute="leading" secondItem="vE8-sG-Jpr" secondAttribute="leading" constant="5" id="lTa-Bc-Io8"/>
-                                </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqn-e0-PWA">
+                                <rect key="frame" x="204" y="187" width="157" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Forgot Password?"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bug-UN-hPV">
+                                <rect key="frame" x="0.0" y="243" width="361" height="45"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ahA-bm-C2b"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yah-Gz-aty"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="bug-UN-hPV" firstAttribute="leading" secondItem="yah-Gz-aty" secondAttribute="leading" id="K06-57-6aa"/>
+                            <constraint firstItem="bug-UN-hPV" firstAttribute="top" secondItem="pqn-e0-PWA" secondAttribute="bottom" constant="20" id="Rt9-Lr-3eZ"/>
+                            <constraint firstItem="yah-Gz-aty" firstAttribute="trailing" secondItem="bug-UN-hPV" secondAttribute="trailing" id="S9V-O8-Cs2"/>
                             <constraint firstItem="yah-Gz-aty" firstAttribute="trailing" secondItem="vE8-sG-Jpr" secondAttribute="trailing" id="fHf-b4-uoZ"/>
                             <constraint firstItem="vE8-sG-Jpr" firstAttribute="top" secondItem="yah-Gz-aty" secondAttribute="top" constant="10" id="gdw-Nl-Oa9"/>
+                            <constraint firstItem="pqn-e0-PWA" firstAttribute="top" secondItem="vE8-sG-Jpr" secondAttribute="bottom" constant="20" id="tga-N4-s86"/>
                             <constraint firstItem="vE8-sG-Jpr" firstAttribute="leading" secondItem="yah-Gz-aty" secondAttribute="leading" id="wq4-zH-r3b"/>
+                            <constraint firstItem="yah-Gz-aty" firstAttribute="trailing" secondItem="pqn-e0-PWA" secondAttribute="trailing" id="zig-3J-5oI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -165,13 +181,13 @@
     </scenes>
     <resources>
         <systemColor name="placeholderTextColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
